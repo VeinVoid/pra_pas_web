@@ -19,6 +19,9 @@
           <td>{{ $husbando->husbando_name }}</td>
           <td>{{ $husbando->husbando_anime }}</td>
           <td>{{ $husbando->husbando_age }}</td>
+          <td><a href="husbando/{{ $husbando->id }}"><button type="button" class="btn btn-outline-primary">Detail</button></a></td>
+          <td><a href="husbando/edit/{{ $husbando->id }}"><button type="button" class="btn btn-outline-warning">Edit</button></a></td>
+          <td><a href="husbando/delete/{{ $husbando->id }}"><button type="button" class="btn btn-outline-danger">Delete</button></a></td>
         </tr>
       @endforeach
     </tbody>
