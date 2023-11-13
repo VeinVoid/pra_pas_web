@@ -7,9 +7,7 @@
         <th scope="col">Name</th>
         <th scope="col">Anime</th>
         <th scope="col">Age</th>
-        <th></th>
         <th scope="col">Action</th>
-        <th></th>
       </tr>
     </thead>
     <tbody class="table-group-divider">
@@ -19,6 +17,7 @@
           <td>{{ $husbando->husbando_name }}</td>
           <td>{{ $husbando->husbando_anime }}</td>
           <td>{{ $husbando->husbando_age }}</td>
+          <td><a href="husbando/{{ $husbando->id }}"><button type="button" class="btn btn-outline-primary">Detail</button></a></td>
         </tr>
       @endforeach
     </tbody>
