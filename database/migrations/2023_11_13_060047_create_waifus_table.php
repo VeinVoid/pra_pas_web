@@ -15,6 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('waifu_name');
             $table->string('waifu_anime');
+            $table->date('waifu_birth');
             $table->integer('waifu_age');
             $table->longText('waifu_deskription');
             $table->longText('waifi_image');
