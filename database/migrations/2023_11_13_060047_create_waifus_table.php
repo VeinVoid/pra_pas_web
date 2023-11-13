@@ -11,8 +11,13 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('tb_waifus', function (Blueprint $table) {
+        Schema::create('tb_waifu', function (Blueprint $table) {
             $table->id();
+            $table->string('waifu_name');
+            $table->string('waifu_anime');
+            $table->integer('waifu_age');
+            $table->longText('waifu_deskription');
+            $table->longText('waifi_image');
             $table->timestamps();
         });
     }
