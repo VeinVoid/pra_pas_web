@@ -11,12 +11,13 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('tb_husbandos', function (Blueprint $table) {
+        Schema::create('tb_husbando', function (Blueprint $table) {
             $table->id();
             $table->string('husbando_name');
             $table->string('husbando_anime');
-            $table->int('husbando_age');
-            $table->str
+            $table->integer('husbando_age');
+            $table->longText('husbando_deskription');
+            $table->longText('husbando_image');
             $table->timestamps();
         });
     }
