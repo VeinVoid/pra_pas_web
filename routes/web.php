@@ -1,5 +1,9 @@
 <?php
 
+use App\Http\Controllers\HusbandoController;
+use App\Http\Controllers\WaifuController;
+use App\Models\Husbando;
+use App\Models\Waifu;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,3 +20,11 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/husbando', [HusbandoController::class, 'index']);
+
+Route::get('/husbando/{husbando}', [HusbandoController::class, 'show']);
+
+Route::get('/waifu', [WaifuController::class, 'index']);
+
+Route::get('/waifu/{waifu}', [WaifuController::class, 'store']);

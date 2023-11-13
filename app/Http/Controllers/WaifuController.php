@@ -12,15 +12,21 @@ class WaifuController extends Controller
      */
     public function index()
     {
-        Waifu::all();
+        return view('pages.waifu_page.show_all',[
+            'title' => 'a',
+            'waifus' => Waifu::all()
+        ]);
     }
 
     /**
      * Store a newly created resource in storage.
      */
-    public function store(Request $request)
+    public function store($waifu)
     {
-        //
+        return view('pages.waifu_page.show_detail',[
+            'title' => 'a',
+            'waifu' => Waifu::find($waifu)
+        ]);
     }
 
     /**

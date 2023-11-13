@@ -12,23 +12,29 @@ class HusbandoController extends Controller
      */
     public function index()
     {
-        //
+        return view('pages.husbando_page.show_all',[
+            'title' => 'a',
+            'husbandos' => Husbando::all()
+        ]);
     }
 
     /**
      * Store a newly created resource in storage.
      */
-    public function store(Request $request)
+    public function store($husbando)
     {
-        //
+        
     }
 
     /**
      * Display the specified resource.
      */
-    public function show(Husbando $husbando)
+    public function show($husbando)
     {
-        //
+        return view('pages.husbando_page.show_detail',[
+            'title' => 'a',
+            'husbando' => Husbando::find($husbando)
+        ]);
     }
 
     /**

@@ -8,4 +8,6 @@ use Illuminate\Database\Eloquent\Model;
 class Waifu extends Model
 {
     use HasFactory;
+
+    protected $table = 'tb_waifu';
 }
