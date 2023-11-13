@@ -15,6 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('husbando_name');
             $table->string('husbando_anime');
+            $table->date('husbando_birth');
             $table->integer('husbando_age');
             $table->longText('husbando_deskription');
             $table->longText('husbando_image');
